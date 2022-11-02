@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gray:'#6B6B6B',
+            background: '#EBEBEB',
+            BGwhite:'#E5E5E5',
+            navOpacity:'#D3D3D3',
+            white:'#FFFFFF',
+          },
+          fontFamily: {
+            roboto: [ 'Roboto', 'sans-serif'],
+          },
+          
+          screens: {
+            'xsm': '300px',
+            'sm': '500px',
+            'md': '768px',
+            'lg': '992px',
+            'xl': '1200px',
+            '2xl': '1152px',
+          },
+          size: {
+            siz39: '39px'
+          }
+        }
+      }
+    }
+  </script>
+  
+</head>
+<body>
+  <header class="bg-gray">
+    <div class="container mx-auto">
+      <div class="flex justify-between p-5">
+        <ul class="flex">
+          <img src="./icon/Logo.svg" alt="">
+          <h1>LOGO</h1>
+        </ul>
+        <ul class="flex me-2">
+          <li class="mr-5  ">Home</li>
+          <li class="mr-5" >About</li>
+          <li class="" >Contact</li>
+        </ul>
+        
+      </div>
+    </div>
+  </header>
+  <main class="bg-background">
+    <div class="container mx-auto">
+      <div class="flex justify-between items-center" >
+        <div class="max-w-2xl">
+          <h1 class="text-4xl mb-3">Double click text to change it</h1>
+          <p class="text-black w-sm mb-3">To style this paragraph , select this paragraph, then edit its styles in the Style tab on the right side of the Designer.</p>
+          <div class="py-4 px-6 bg-white max-w-md"><span> Edit this link in the settings tab in the right panel</span></div>
+        </div>
+        <div >
+          <img src="./icon/IMAGE.png" class="ml-8" alt="img">
+          <p class="mb-10 text-center opacity-50">In the navigator tab located in the right panel you can <br> see all your elements in one place.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-navOpacity flex gap-16 justify-center p-12">
+      <div><img src="./icon/facebook.png" alt="image"></div>
+      <div><img src="./icon/strip.png" alt="image"></div>
+      <div><img src="./icon/apple.png" alt="image"></div>
+      <div><img src="./icon/fitbit.png" alt="image"></div>
+      <div><img src="./icon/Buzzfeed.png" alt="image"></div>
+      <div><img src="./icon/sega.png" alt="image"></div>
+      <div><img src="./icon/box.png" alt="image"></div>
+      <div><img src="./icon/google.png" alt="image"></div>
+    </div>
+    
+    <div class="bg-white  ">
+      <div class="grid grid-cols-2 gap-14  container mx-auto p-10"> 
+        <div class="pt-20">
+          <h3 class="text-3xl mb-2">What is a Class?</h3>
+          <p>A Class is more than just the name of an element, it is a title you create that can be added to other elements that you'd like to be styled the same way. Notice that if you select this paragraph, and change it, it will effect the paragraph below as well, since they have the same Class.</p>
+        </div>
+        <div>
+          <img src="./icon/class.png" alt="img">
+        </div>
+        <div>
+          <img src="./icon/alignment.png" class="" alt="img">
+          <p class="opacity-50">You can also double click an image to change its size.</p>
+        </div>
+        <div class="pt-20">
+          <h3 class="text-3xl mb-2">Parents, and text alignment</h3>
+          <p>By now you may have noticed that web design, simply put, is a series of boxes inside of boxes with text and images inside of them. Try selecting the parent element of this text</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-background p-20">
+      <div>
+        <h2 class="text-4xl text-center mb-5">Layout tip</h2>
+        <p class="text-center">Change the layout direction of a flexbox element from horizontal to vertical.</p>
+        <img class="mx-auto" src="./icon/layut.png" alt="img">
+        <p class="text-center opacity-50 mb-10">Flexbox is a display setting found in the styles tab under <br> Layout Display Settings </p>
+      </div>
+      
+      <div class="container mx-auto flex  ">
+        <div class="p-7 bg-white w-2/6 mr-5">
+          <h3 class="text-center text-xl mb-3 " >Step 1</h3>
+          <img src="./icon/layout1.png" alt="img" class="mx-auto">
+          <p class="text-center ">Click to select Column 1 which is the white box that this paragraph you're reading is currently inside of.</p>
+        </div>
+        <div class="p-7 bg-white w-2/6 mr-5">
+          <h3 class="text-center text-xl mb-2">Step 2</h3>
+          <img src="./icon/layout2.png" alt="img" class="mx-auto">
+          <p class="text-center">Now that Column 1 is selected, press the up arrow on your keyboard, selecting the parent element: Column Wrap 1</p>
+        </div>
+        <div class="p-7 bg-white w-2/6">
+          <h3 class="text-center text-xl mb-3">Step 3</h3>
+          <img src="./icon/layout3.png" alt="img" class="mx-auto">
+          <p  class="text-center">With Column Wrap 1 selected, click the icon shown above in the Layout > Flex Layout styles panel.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="bg-white p-20">
+      <div class="contatiner mx-auto">
+        <h2 class="text-4xl mb-5">Additional tips</h2>
+        <div class="flex gap-7">
+          <div>
+            <img src="./icon/tips1.png" class=" " alt="img">
+            <h3 class="text-3xl mb-5">Margin / Padding</h3>
+            <p>The above screenshot shows the controls for margin and padding. Simply put, this is the space you add inside and/or outside of an element.</p>
+          </div>
+          <div>
+            <img src="./icon/tips2.png" class="" alt="img">
+            <h3 class="text-3xl mb-5">Margin / Padding</h3>
+            <p>The navigator tab gives you a clear breakdown of elements and their parents, as well as where they are located within the page.</p>
+          </div>
+          <div>
+            <img src="./icon/tips3.png" class="" alt="img">
+            <h3 class="text-3xl mb-5">Responsive design</h3>
+            <p>Clicking these breakpoints icons will change the size of the viewport to mimic common device sizes. Styles that are changed when viewing the website at other breakpoints will effect sizes smaller as well.</p>
+          </div>
+          <div>
+            <img src="./icon/tips4.png" class="" alt="img">
+            <h3 class="text-3xl mb-5">States</h3>
+            <p>On the top right of the selector section, there is a states dropdown. Here you can edit element styles at different states. The most common use for this is adding hover effects to elements such as buttons.</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </main>
+  <footer class="bg-gray ">
+    <div class="container mx-auto ">
+      <div class="flex justify-between pt-5 pb-5 ">
+        <ul class="flex">
+          <img src="./icon/Logo.svg" alt="">
+          <h1>LOGO</h1>
+        </ul>
+        <ul class="flex ">
+          <li class="mr-5  ">Home</li>
+          <li class="mr-5" >About</li>
+          <li class="" >Contact</li>
+        </ul>
+        
+      </div>
+    </div>
+    <div class="bg-black p-5 ">
+      <div class="container">
+        <a href="#" class="text-white opacity-50" >© 2017, Webflow, Inc. All Rights Reserved. Brand logos for demonstration purposes only.</a>
+        
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
